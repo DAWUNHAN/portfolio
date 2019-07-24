@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "gh-pages": "^2.0.1"
-  },
-  "homepage": "https://dawunhan.github.io/portfolio",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-}
