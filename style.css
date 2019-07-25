@@ -209,3 +209,24 @@ span.projects-button a {
 .footer-details a:hover {
     text-decoration: none;
 }
+
+@media  screen and (max-width: 667px) {
+  .introduce{
+    display: block !important;
+  }
+  .projects-content-odd, .projects-content-even{
+    display: block;
+  }
+  .projects-sections.small {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .projects-content-even{
+    margin-left: 0;
+  }
+  .projects-link {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+}
