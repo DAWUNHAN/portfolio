@@ -1,0 +1,13 @@
+{
+  "homepage": "https://dawunhan.github.io/portfolio",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  },
+  "dependencies": {
+    "@lendi-ui/text-bubble": "^2.2.1",
+    "bubble-text": "^1.0.1",
+    "jquery": "^3.4.1"
+  }
+}

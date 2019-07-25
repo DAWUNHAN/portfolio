@@ -6,20 +6,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 <body>
     <div id="container">
       <div class="main">
         <div class="main-sentence">
           <div class="main-sentence-ready">
-            ready for CHALLENGES<br />
-          </div>
-          <div>
-            <i class="fas fa-laptop-code icon-computer main-icon"></i>
+            ready for
           </div>
           <div class="main-sentence-hello">
-            Hello, I am D.A Han
-            </div>
+            <span>CHALLENGES</span>
+            <span>CREATIVE PROJECTS</span>
+            <span>SPLENDID WORKS</span>
+          </div>
         </div>
       </div>
       <div class="introduce">
@@ -83,8 +83,8 @@
         <h1 class="projects-title">Projects</h1>
         <div class="line"></div>
         <div class="projects-content-odd">
-          <div class="projects-sections left"><img src="./img/project1.png"/></div>
-          <div class="projects-sections right">
+          <div class="projects-sections big"><img src="./img/project1.png"/></div>
+          <div class="projects-sections small">
             <div class="projects-name">Movie App</div>
             <div class="projects-explain">
               <i class="fas fa-check-circle"></i>  Created reusable components using React.js
@@ -127,7 +127,7 @@
           </div>
         </div>
         <div class="projects-content-even">
-          <div class="projects-sections right">
+          <div class="projects-sections small">
             <div class="projects-name">Song Playlists</div>
             <div class="projects-explain">
               <i class="fas fa-check-circle"></i>  Provided Add, Update, and Delete functions
@@ -174,8 +174,8 @@
           <div class="projects-sections right even"><img src="./img/project2.png"/></div>
         </div>
         <div class="projects-content-odd">
-          <div class="projects-sections left"><img src="./img/project3.png"/></div>
-          <div class="projects-sections right">
+          <div class="projects-sections big"><img src="./img/project3.png"/></div>
+          <div class="projects-sections small">
             <div class="projects-name">Weather App</div>
             <div class="projects-explain">
               <i class="fas fa-check-circle"></i>  Weather data from weather API ‘OpenWeatherMap’
@@ -223,7 +223,7 @@
         </div>
         <div class="footer">
           <div class="footer-contact">
-            <div class="footer-details">
+            <div class="footer-details title">
               CONTACT
             </div>
             <div class="footer-details">
@@ -239,7 +239,12 @@
         </div>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="textition.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.google.com/specimen/PT+Serif');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 * {
   margin: 0;
@@ -71,9 +70,16 @@
     font-size: 20pt;
     font-family: "Open sans";
     letter-spacing: 3pt;
+    margin-bottom: 3%;
 }
 .main-sentence-hello {
     font-size: 35pt;
+    color: white;
+    display: flex !important;
+    justify-content: center !important;
+}
+.main-sentence-hello span{
+  width: 100% !important;
 }
 .introduce {
   display: grid;
@@ -139,12 +145,13 @@
 .projects-sections img {
     width: 70%;
 }
-.projects-sections.left{
+.projects-sections.big{
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.projects-sections.right{
+.projects-sections.small{
+    width: 90%;
 }
 .projects-name {
   font-family: "PT Serif";
@@ -154,7 +161,6 @@
   margin-bottom: 7%;
 }
 .projects-table {
-    width: 80%;
     margin-top: 7%;
 }
 .projects-link {
@@ -187,13 +193,19 @@ span.projects-button a {
     justify-content: center;
 }
 .footer {
-    padding: 5% 0%;
-    margin-top: 5%;
+  margin-top: 5%;
+    padding: 2% 0%;
     background-color: black;
     color:white;
     display: flex;
     justify-content: center;
 }
+.footer-details.title {
+  margin-bottom: 5%;
+}
 .footer-details a {
     color: white;
+}
+.footer-details a:hover {
+    text-decoration: none;
 }
