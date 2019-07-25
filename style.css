@@ -230,4 +230,7 @@ span.projects-button a {
     justify-content: space-evenly;
     width: 100%;
   }
+  .main-sentence-hello{
+    font-size: 20pt;
+  }
 }
