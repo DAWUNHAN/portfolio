@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -164,19 +165,58 @@
     margin-top: 7%;
 }
 .projects-link {
-    DISPLAY: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 5%;
-    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
 }
-.projects-button {
-    background-color: rgb(31, 84, 97);
-    padding: 2% 10%;
-    border-radius: 20px;
-    text-align: center;
+.projects-button{
+  position: relative;
+  font-size: inherit;
+  color: inherit;
+  background: rgb(31, 84, 97);
+  cursor: pointer;
+  padding: 1% 10%;
+  display: inline-block;
+  outline: none;
+  position: relative;
+  border: 3px solid white;
+  color: white;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
 }
-span.projects-button a {
+.projects-button:after{
+  content: '';
+  position: absolute;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  transition: all 1s;
+  width: 100%;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  background: rgb(31, 84, 97);
+  opacity: 0.3;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+.projects-button:hover{
+    border: 3px solid rgb(31, 84, 97);
     color: white;
+    background: white;
+}
+.projects-button:hover:after{
+  height: 400%;
+  opacity: 1;
+}
+.projects-button span{
+  z-index: 2;
+  position: relative;
+}
+.projects-link a:hover {
+  text-decoration: none;
 }
 .projects-content-even{
   display: grid;
