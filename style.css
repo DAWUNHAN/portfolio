@@ -140,7 +140,7 @@
   text-align: center;
   color: rgb(13, 58, 114);
 }
-.projects-content-odd{
+.projects-content{
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-top: 7%;
