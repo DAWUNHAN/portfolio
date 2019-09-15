@@ -7,7 +7,7 @@
   font-family: "Open sans";
 }
 .main {
-  height: 100%;
+  height: calc(100vh);
   margin: 0;
   padding-top: 20%;
   padding-bottom: 20%;
@@ -133,6 +133,8 @@
 }
 .projects {
   padding-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .projects-title{
   text-align: center;
@@ -140,7 +142,7 @@
 }
 .projects-content-odd{
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   margin-top: 7%;
 }
 .projects-sections img {
@@ -151,15 +153,15 @@
   align-items: center;
   justify-content: center;
 }
-.projects-sections.small{
-    width: 90%;
-}
 .projects-name {
   font-family: "PT Serif";
   font-style: italic;
   font-size: 29pt;
   font-weight: 500;
   margin-bottom: 7%;
+}
+.projects-explain {
+    line-height: 200%;
 }
 .projects-table {
     margin-top: 7%;
@@ -218,14 +220,17 @@
 .projects-link a:hover {
   text-decoration: none;
 }
-.projects-content-even{
+.projects-content{
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
   margin-top: 7%;
-  margin-left: 10%;
+  grid-gap: 10%;
+  align-items: center;
+  justify-content: center;
 }
-.projects-sections.right img {
-    width: 90%;
+.projects-sections img {
+    width: 100%;
+    display: flex;
 }
 .projects-sections.right.even {
     display: flex;
@@ -249,12 +254,17 @@
 .footer-details a:hover {
     text-decoration: none;
 }
+.line {
+    border-bottom: 2px solid rgb(13, 58, 114);
+    width: 5%;
+    margin: auto;
+}
 
 @media only screen and (max-width: 667px)  {
   .introduce{
     display: block !important;
   }
-  .projects-content-odd, .projects-content-even{
+  .projects-content{
     display: block;
     margin-top: 15%;
   }
@@ -262,10 +272,11 @@
     margin: 0 auto;
     width: 90%;
   }
-  .projects-content-even{
+  .projects-content.mobile-reverse{
     margin-left: 0;
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 30px;
   }
   .projects-link {
     display: flex;
