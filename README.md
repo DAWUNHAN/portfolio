@@ -5,8 +5,10 @@
 - SaSS
 - Node.js
 - Styled Components
+- WordPress
+- MongoDB
 
 ## Contacts
-  -  <a href="https://dawunhan.github.io/portfolio/">Portfolio</a>
+  -  <a href="https://dawunhan.github.io/portfolio/" target="_blank">Portfolio</a>
   - dawun.han@gmail.com
-  - <a href="https://www.linkedin.com/in/da-han/">LinkedIn</a>
+  - <a href="https://www.linkedin.com/in/da-han/" target="_blank">LinkedIn</a>
