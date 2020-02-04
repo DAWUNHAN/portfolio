@@ -1,5 +1,12 @@
-Hello, I am D.A Han!
-This is my portfolio (https://dawunhan.github.io/portfolio/)
-Please contact to me if you have any questions! 
+# Portfolio
+## I am a fullstack developer, Dawun Han (D.A)
+- JavaScript (ES6)
+- React.js
+- SaSS
+- Node.js
+- Styled Components
 
-EMAIL : dawun.han@gmail.com
+## Contacts
+  -  <a href="https://dawunhan.github.io/portfolio/">Portfolio</a>
+  - dawun.han@gmail.com
+  - <a href="https://www.linkedin.com/in/da-han/">LinkedIn</a>
