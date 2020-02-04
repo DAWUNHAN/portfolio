@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" id="viewport" name="viewport" content ="width=device-width">
+  <head>
+    <meta
+      charset="UTF-8"
+      id="viewport"
+      name="viewport"
+      content="width=device-width"
+    />
     <title>D.A HAN</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/animate.css">
+  </head>
+  <body>
     <div id="container">
       <div class="main">
         <div class="main-sentence">
@@ -25,257 +44,340 @@
       <div class="introduce">
         <div class="introduce-section left">
           <h1>About myself</h1>
-          <div class="introduce-sentence">
-           Hello, I am a developer, D.A Han.<br />
-           I would like to solve problmes with you!<br />
-           I enjoy programming, especially Javascript and React.
+          <div class="projects-explain margin-top-7">
+            The Developer, Dawun Han (D.A)<br />
+            wants to be connected to the world by programming
           </div>
-          <div class="introduce-contact">
-            <div class="middle-title">
-              Contact
-            </div>
+          <div class="introduce-contact margin-top-7">
             <div>
               <div class="contact-details">
-                <i class="fas fa-envelope"></i><a href="mailto:dawun.han@gmail.com"> dawun.han@gmail.com</a>
+                <i class="fas fa-envelope"></i
+                ><a href="mailto:dawun.han@gmail.com"> dawun.han@gmail.com</a>
               </div>
               <div class="contact-details">
-                <i class="fab fa-github-square"></i> <a href="github.com/DAWUNHAN"> GitHub</a>
+                <i class="fab fa-github-square"></i>
+                <a href="github.com/DAWUNHAN"> GitHub</a>
               </div>
               <div class="contact-details">
-                <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/da-han/"> LinkedIn</a>
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/da-han/"> LinkedIn</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="introduce-section right">
+        <div class="introduce-section right ">
           <h1 class="introduce-title-white">Technical Skills</h1>
-          <div class="middle-title">
-            Programming Skills
-          </div>
-          <div class="skill-lists">
+          <div class="skill-lists  margin-top-7">
             <i class="fab fa-html5 skills skills-icon"></i>
             <i class="fab fa-css3-alt skills skills-icon"></i>
-            <i class="fab fa-js-square skills skills-icon"></i>
+            <i class="fab fa-node-js skills skills-icon"></i>
             <span class="skills">HTML</span>
             <span class="skills">CSS</span>
             <span class="skills">Javascript</span>
+
+            <i class="fab fa-sass  skills skills-icon"></i>
             <i class="fab fa-react skills skills-icon"></i>
             <i class="fab fa-node skills skills-icon"></i>
-            <i class="fab fa-node-js skills skills-icon"></i>
+            <span class="skills">Sass</span>
             <span class="skills">React.js</span>
             <span class="skills">Node.js</span>
+
+            <i class="fas fa-passport skills skills-icon"></i>
+            <i class="fab fa-js-square skills skills-icon"></i>
+            <i class="fab fa-aws skills skills-icon"></i>
+            <span class="skills">Passport.js</span>
             <span class="skills">Express.js</span>
-          </div>
-          <div class="middle-title">
-            Data Skills
-          </div>
-          <div class="skill-lists">
-            <i class="fas fa-database skills skills-icon"></i>
-            <i class="fas fa-server skills skills-icon"></i>
-            <i class="fas fa-chart-pie skills skills-icon"></i>
-            <span class="skills">SQL</span>
-            <span class="skills">NoSQL</span>
-            <span class="skills">Tableau</span>
+            <span class="skills">AWS</span>
           </div>
         </div>
       </div>
       <div class="projects">
         <h1 class="projects-title">Projects</h1>
-        <div class="line"></div>
+        <div class="projects-content mobile-reverse ">
+          <div class="projects-sections left wow bounceInLeft">
+            <img src="./img/project5.png" />
+          </div>
+          <div class="projects-sections small right wow bounceInRight">
+            <div class="projects-name">Youtube clone coding website</div>
+            <div class="projects-explain">
+              <i class="fas fa-check-circle"></i> User Authentication on Facebook and Github with Passport.js
+            </div>
+            <div class="projects-explain">
+              <i class="fas fa-check-circle"></i> Upload videos on AWS with MongoDB
+            </div>
+            <div class="projects-explain">
+              <i class="fas fa-check-circle"></i> Programming by ES6 and 100% Vanilla JavaScript
+            </div>
+            <div class="projects-explain">
+              <i class="fas fa-check-circle"></i> Comments function using AJAX
+            </div>
+            <div class="projects-table">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">Technical Skills</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Front-end</td>
+                    <td>ES6, Vanilla JS, SaSS, Webpack, PUG</td>
+                  </tr>
+                  <tr>
+                    <td>Back-end</td>
+                    <td>Node JS, ES6, AWS, Heroku</td>
+                  </tr>
+                  <tr>
+                    <td>Database</td>
+                    <td>MongoDB Atlas, Mongoose</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="projects-link">
+              <a
+                href="https://agile-badlands-95319.herokuapp.com/"
+                class="projects-button"
+                target="_blank"
+              >
+                <span>SITE</span>
+              </a>
+              <a
+                href="https://github.com/DAWUNHAN/itube"
+                class="projects-button"
+                target="_blank"
+              >
+                <span>REPO</span>
+              </a>
+            </div>
+          </div>
+        </div>
         <div class="projects-content">
-          <div class="projects-sections small">
+          <div class="projects-sections small left wow bounceInLeft">
             <div class="projects-name">A movie & show discovery website</div>
             <div class="projects-explain">
-              <i class="fas fa-check-circle"></i>  Seperate container and Presentational components for reusability
+              <i class="fas fa-check-circle"></i> Seperate container and
+              Presentational components for reusability
             </div>
             <div class="projects-explain">
-              <i class="fas fa-check-circle"></i>  Used BrowserRouter with React Router
+              <i class="fas fa-check-circle"></i> Used BrowserRouter with React
+              Router
             </div>
             <div class="projects-explain">
-              <i class="fas fa-check-circle"></i>  Created highly customizable components with Styled Components
+              <i class="fas fa-check-circle"></i> Created highly customizable
+              components with Styled Components
             </div>
             <div class="projects-explain">
-              <i class="fas fa-check-circle"></i>  Rendered data from <a href="https://www.themoviedb.org/">The Movie DB API</a>
+              <i class="fas fa-check-circle"></i> Rendered data from
+              <a href="https://www.themoviedb.org/">The Movie DB API</a>
             </div>
             <div class="projects-table">
               <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col">Category</th>
-                  <th scope="col">Technical Skills</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Front-end</td>
-                  <td>React.js</td>
-                </tr>
-                <tr>
-                  <td>Front-end</td>
-                  <td>JSX</td>
-                </tr>
-                <tr>
-                  <td>Back-end</td>
-                  <td>Api</td>
-                </tr>
-                <tr>
-                  <td>Networking</td>
-                  <td>Axios</td>
-                </tr>
-              </tbody>
-            </table>
+                <thead>
+                  <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">Technical Skills</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Front-end</td>
+                    <td>React.js, Styled Components, JSX</td>
+                  </tr>
+                  <tr>
+                    <td>Back-end</td>
+                    <td>MovieDB API, AJAX</td>
+                  </tr>
+                  <tr>
+                    <td>Networking</td>
+                    <td>Axios</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class="projects-link">
-              <a href="https://friendly-brattain-b6c39b.netlify.com/" class="projects-button" target="_blank">
+              <a
+                href="https://friendly-brattain-b6c39b.netlify.com/"
+                class="projects-button"
+                target="_blank"
+              >
                 <span>DEMO</span>
               </a>
-              <a href="https://github.com/DAWUNHAN/nomflix" class="projects-button" target="_blank">
+              <a
+                href="https://github.com/DAWUNHAN/nomflix"
+                class="projects-button"
+                target="_blank"
+              >
                 <span>REPO</span>
               </a>
             </div>
           </div>
-          <div class="projects-sections"><img src="./img/Project4.png"/></div>
+          <div class="projects-sections  right wow bounceInRight">
+            <img src="./img/Project4.png" />
+          </div>
         </div>
-        <div class="projects-content mobile-reverse">
-          <div class="projects-sections"><img src="./img/project1.png"/></div>
-          <div class="projects-sections small">
+        <div class="projects-content mobile-reverse ">
+          <div class="projects-sections  left wow bounceInLeft">
+            <img src="./img/project1.png" />
+          </div>
+          <div class="projects-sections small right wow bounceInRight">
             <div class="projects-name">Movie App</div>
             <div class="projects-explain">
-              <i class="fas fa-check-circle"></i>  Created reusable components using React.js
+              <i class="fas fa-check-circle"></i> Created reusable components
+              using React.js
             </div>
             <div class="projects-explain">
-              <i class="fas fa-check-circle"></i>  Fetched film data using API from <a href="https://yts.lt/api">yts</a>
+              <i class="fas fa-check-circle"></i> Fetched film data using API
+              from <a href="https://yts.lt/api">yts</a>
             </div>
             <div class="projects-table">
               <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col">Category</th>
-                  <th scope="col">Technical Skills</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Front-end</td>
-                  <td>HTML</td>
-                </tr>
-                <tr>
-                  <td>Front-end</td>
-                  <td>CSS</td>
-                </tr>
-                <tr>
-                  <td>Front-end</td>
-                  <td>React.js</td>
-                </tr>
-              </tbody>
-            </table>
+                <thead>
+                  <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">Technical Skills</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Front-end</td>
+                    <td>HTML</td>
+                  </tr>
+                  <tr>
+                    <td>Front-end</td>
+                    <td>CSS</td>
+                  </tr>
+                  <tr>
+                    <td>Front-end</td>
+                    <td>React.js</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class="projects-link">
-              <a href="https://dawunhan.github.io/movieapp-react/"  class="projects-button" target="_blank">
+              <a
+                href="https://dawunhan.github.io/movieapp-react/"
+                class="projects-button"
+                target="_blank"
+              >
                 <span>DEMO</span>
               </a>
-              <a href="https://github.com/DAWUNHAN/movieapp-react"  class="projects-button" target="_blank">
+              <a
+                href="https://github.com/DAWUNHAN/movieapp-react"
+                class="projects-button"
+                target="_blank"
+              >
                 <span>REPO</span>
               </a>
             </div>
           </div>
         </div>
         <div class="projects-content">
-          <div class="projects-sections small">
+          <div class="projects-sections small left wow bounceInLeft">
             <div class="projects-name">Song Playlists</div>
             <div class="projects-explain">
-              <i class="fas fa-check-circle"></i>  Provided Add, Update, and Delete functions
+              <i class="fas fa-check-circle"></i> Provided Add, Update, and
+              Delete functions
             </div>
             <div class="projects-explain">
-              <i class="fas fa-check-circle"></i>  Established components by React.js
+              <i class="fas fa-check-circle"></i> Established components by
+              React.js
             </div>
             <div class="projects-explain">
-              <i class="fas fa-check-circle"></i>  Understood usage of states and props
+              <i class="fas fa-check-circle"></i> Understood usage of states and
+              props
             </div>
             <div class="projects-table">
               <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col">Category</th>
-                  <th scope="col">Technical Skills</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Front-end</td>
-                  <td>HTML</td>
-                </tr>
-                <tr>
-                  <td>Front-end</td>
-                  <td>CSS</td>
-                </tr>
-                <tr>
-                  <td>Front-end</td>
-                  <td>React.js</td>
-                </tr>
-              </tbody>
-            </table>
+                <thead>
+                  <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">Technical Skills</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Front-end</td>
+                    <td>HTML, CSS, React.js</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class="projects-link">
-              <a href="https://dawunhan.github.io/Playlist-React/" class="projects-button" target="_blank">
+              <a
+                href="https://dawunhan.github.io/Playlist-React/"
+                class="projects-button"
+                target="_blank"
+              >
                 <span>DEMO</span>
               </a>
-              <a href="https://github.com/DAWUNHAN/Playlist-React/" class="projects-button" target="_blank">
+              <a
+                href="https://github.com/DAWUNHAN/Playlist-React/"
+                class="projects-button"
+                target="_blank"
+              >
                 <span>REPO</span>
               </a>
             </div>
           </div>
-          <div class="projects-sections"><img src="./img/project2.png"/></div>
+          <div class="projects-sections  right wow bounceInRight">
+            <img src="./img/project2.png" />
+          </div>
         </div>
         <div class="projects-content mobile-reverse">
-          <div class="projects-sections"><img src="./img/project3.png"/></div>
-          <div class="projects-sections small">
+          <div class="projects-sections  left wow bounceInLeft">
+            <img src="./img/project3.png" />
+          </div>
+          <div class="projects-sections small right wow bounceInRight">
             <div class="projects-name">Weather App</div>
             <div class="projects-explain">
-              <i class="fas fa-check-circle"></i>  Weather data from weather API ‘OpenWeatherMap’
+              <i class="fas fa-check-circle"></i> Weather data from weather API
+              ‘OpenWeatherMap’
             </div>
             <div class="projects-explain">
-              <i class="fas fa-check-circle"></i>  Experienced React Native development tools
+              <i class="fas fa-check-circle"></i> Experienced React Native
+              development tools
             </div>
             <div class="projects-explain">
-              <i class="fas fa-check-circle"></i>  Designed visually appealing UI and UX Design
+              <i class="fas fa-check-circle"></i> Designed visually appealing UI
+              and UX Design
             </div>
             <div class="projects-table">
               <table class="table table-striped">
-              <thead>
-                <tr>
-                  <th scope="col">Category</th>
-                  <th scope="col">Technical Skills</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Front-end</td>
-                  <td>HTML</td>
-                </tr>
-                <tr>
-                  <td>Front-end</td>
-                  <td>CSS</td>
-                </tr>
-                <tr>
-                  <td>Front-end</td>
-                  <td>React Native</td>
-                </tr>
-                <tr>
-                  <td>Tool</td>
-                  <td>Expo</td>
-                </tr>
-              </tbody>
-            </table>
+                <thead>
+                  <tr>
+                    <th scope="col">Category</th>
+                    <th scope="col">Technical Skills</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Front-end</td>
+                    <td>React Native, HTML, CSS</td>
+                  </tr>
+                  <tr>
+                    <td>Back-end</td>
+                    <td>OpenWeatherMap API</td>
+                  </tr>
+                  <tr>
+                    <td>Tool</td>
+                    <td>Expo</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class="projects-link">
-              <a href="https://github.com/DAWUNHAN/weatherapp-reactnative" class="projects-button" target="_blank">
+              <a
+                href="https://github.com/DAWUNHAN/weatherapp-reactnative"
+                class="projects-button"
+                target="_blank"
+              >
                 <span>REPO</span>
               </a>
             </div>
           </div>
         </div>
-
       </div>
       <div class="footer">
         <div class="footer-contact">
@@ -283,23 +385,30 @@
             CONTACT
           </div>
           <div class="footer-details">
-            <i class="fas fa-envelope"></i><a href="mailto:dawun.han@gmail.com"> dawun.han@gmail.com</a>
+            <i class="fas fa-envelope"></i
+            ><a href="mailto:dawun.han@gmail.com"> dawun.han@gmail.com</a>
           </div>
           <div class="footer-details">
-            <i class="fab fa-github-square"></i> <a href="github.com/DAWUNHAN"> GitHub</a>
+            <i class="fab fa-github-square"></i>
+            <a href="github.com/DAWUNHAN"> GitHub</a>
           </div>
           <div class="footer-details">
-            <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/da-han/"> LinkedIn</a>
+            <i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/da-han/"> LinkedIn</a>
           </div>
         </div>
       </div>
     </div>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
     <script
       src="https://code.jquery.com/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-      crossorigin="anonymous"></script>
-    <script type="text/javascript" src="textition.js"></script>
-    <script src="index.js"></script>
-</body>
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script type="text/javascript" src="js/textition.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>
