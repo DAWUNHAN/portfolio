@@ -160,6 +160,11 @@
 }
 .projects-sections img {
   width: 70%;
+  transition: all .3s linear;
+}
+.projects-sections img:hover {
+  transform: scale(1.1);
+  transition: all .3s linear;
 }
 .projects-sections.big {
   display: flex;
@@ -244,6 +249,7 @@
 .projects-sections img {
   width: 100%;
   display: flex;
+  filter: drop-shadow(4px 4px 8px);
 }
 .projects-sections.right.even {
   display: flex;
@@ -271,6 +277,9 @@ i.fas.fa-check-circle {
   color: #001F54;
 }
 
+.fab{
+  filter: drop-shadow(1px 1px 1px);
+}
 
 @media only screen and (max-width: 667px) {
   .introduce {
