@@ -18,7 +18,9 @@
   -webkit-animation: Gradient 15s ease infinite;
   -moz-animation: Gradient 15s ease infinite;
   animation: Gradient 15s ease infinite;
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 /* #wave{
   background-color:#ffffff00;
