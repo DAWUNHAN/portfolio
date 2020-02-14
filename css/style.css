@@ -22,11 +22,14 @@
   flex-direction: column;
   justify-content: center;
 }
-/* #wave{
+#wave{
   background-color:#ffffff00;
   bottom: 0;
   position: absolute;
-} */
+  width: 100%;
+  left:0;
+  right:0;
+}
 @-webkit-keyframes Gradient {
   0% {
     background-position: 0% 50%;
@@ -102,7 +105,10 @@
   padding: 10% 20%;
 }
 .introduce-section.right {
-  background-color: #001F54;
+  /* background-color: #001F54; */
+  background: linear-gradient(135deg, rgba(0,31,84, 0.9) 0%, rgba(0,31,84, 0.7) 100%), url("../img/coding.jpeg") center no-repeat;
+  bacground-size:cover;
+  position: relative;
   padding: 10% 20%;
   color: white;
 }
