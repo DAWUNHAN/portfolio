@@ -93,6 +93,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   clip-path: url(#wave);
+  box-shadow: 15px 15px 30px -30px #000, 0 0 0px rgba(0,0,0,.06), inset 0 0 0 1px rgba(0,0,0,.2);
 }
 .introduce-section h1 {
   color: #001F54;
@@ -105,9 +106,9 @@
   padding: 10% 20%;
 }
 .introduce-section.right {
-  /* background-color: #001F54; */
-  background: linear-gradient(135deg, rgba(0,31,84, 0.9) 0%, rgba(0,31,84, 0.7) 100%), url("../img/coding.jpeg") center no-repeat;
-  bacground-size:cover;
+  background-color: #001F54;
+  /* background: linear-gradient(135deg, rgba(0,31,84, 0.9) 0%, rgba(0,31,84, 0.7) 100%), url("../img/coding.jpeg") center no-repeat; */
+  background-size:cover;
   position: relative;
   padding: 10% 20%;
   color: white;
@@ -193,6 +194,7 @@
 }
 .projects-explain {
   line-height: 200%;
+  font-size: 1.2rem;
 }
 .projects-table {
   margin-top: 7%;
@@ -269,22 +271,35 @@
   align-items: center;
   justify-content: center;
 }
+.table {
+  font-size: 1rem;
+}
 .footer {
-  margin-top: 5%;
-  padding: 2% 0%;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
+  color: #8C8C8D;
+	background:#F2F2F2;
+  margin-top: 10vh;
+  padding: 70px 40px;
+  border-top: 1px solid #e7e8e9;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
-.footer-details.title {
-  margin-bottom: 5%;
+.footer a {
+	color: rgb(29, 29, 31);
+	text-decoration: none;
 }
-.footer-details a {
-  color: white;
+.footer a:hover{
+	color: rgb(29, 29, 31);
+	text-decoration: none;
 }
-.footer-details a:hover {
-  text-decoration: none;
+.footer-grid {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.footer-grid h2 {
+	color: black;
 }
 i.fas.fa-check-circle {
   color: #001F54;
@@ -301,6 +316,7 @@ i.fas.fa-check-circle {
   .projects-content {
     display: block;
     margin-top: 15%;
+    margin-bottom: 10vh;
   }
   .projects-sections.small {
     margin: 0 auto;
@@ -319,5 +335,13 @@ i.fas.fa-check-circle {
   }
   .main-sentence-hello {
     font-size: 20pt;
+  }
+  .footer{
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-grid{
+    margin-left: inherit;
+    margin-right: inherit;
   }
 }
