@@ -93,7 +93,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   clip-path: url(#wave);
-  box-shadow: 15px 15px 30px -30px #000, 0 0 0px rgba(0,0,0,.06), inset 0 0 0 1px rgba(0,0,0,.2);
+  box-shadow: 5px 5px 10px -10px #000, 0 0 0px rgba(0,0,0,.06), inset 0 0 0 1px rgba(0,0,0,.2);
 }
 .introduce-section h1 {
   color: #001F54;
@@ -106,8 +106,9 @@
   padding: 10% 20%;
 }
 .introduce-section.right {
-  background-color: #001F54;
-  /* background: linear-gradient(135deg, rgba(0,31,84, 0.9) 0%, rgba(0,31,84, 0.7) 100%), url("../img/coding.jpeg") center no-repeat; */
+  background: #1e3c72;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size:cover;
   position: relative;
   padding: 10% 20%;
@@ -279,8 +280,11 @@
   justify-content: center;
 }
 .footer {
-  color: #8C8C8D;
-	background:#F2F2F2;
+  /* color: #8C8C8D; */
+  color: black;
+  background: #8e9eab;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin-top: 10vh;
   padding: 70px 40px;
   border-top: 1px solid #e7e8e9;
