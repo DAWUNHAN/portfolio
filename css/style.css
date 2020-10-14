@@ -322,12 +322,13 @@ i.fas.fa-check-circle {
 .fab {
   filter: drop-shadow(1px 1px 1px);
 }
-.highlight {
+span.highlight {
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0) 50%,
     #00a8c447 50%
   );
+  background: #00a8c447;
 }
 
 @media only screen and (max-width: 667px) {
