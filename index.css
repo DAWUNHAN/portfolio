@@ -13,21 +13,39 @@ body:before {
     display: block;
     content: "";
     width: 100%;
-    height: 10px;
+    height: 17px;
     background: -webkit-gradient(linear, left top, right top, from(#5433FF), color-stop(#20BDFF), to(#A5FECB));
     background: linear-gradient(90deg, #5433FF, #20BDFF, #A5FECB);
 }
 
 .container {
-    padding: 50px 10%;
+    padding: 100px 10%;
+}
+.small-title{
+  font-size: 1.7rem;
+  margin-bottom: 10px;
 }
 .desc-title {
-    color: #9d9d9d;
+    color: #212121;
 }
 .text-strong {
   font-weight: bold;
   color: #5433FF; /* This is Tailwind's red-500 color, you can use any hex color you prefer */
 }
+.text-black{
+  color: black;
+}
+.desc-title {
+  font-size: 1.5rem;
+}
+.mb-2 {
+  margin-bottom: 20px; /* 여기서는 8px로 설정했으나, 원하는 간격에 따라 조정 가능 */
+}
 .indent-text {
   color: rgba(0, 0, 0, 0);
+}
+.centered-list {
+  width: 70%; /* 너비 설정 */
+  margin: 0 auto; /* 가운데 정렬 */
+  text-align: left; /* 텍스트 왼쪽 정렬 */
 }
