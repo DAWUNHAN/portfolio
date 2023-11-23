@@ -33,6 +33,7 @@ body:before {
   color: #5433FF; /* This is Tailwind's red-500 color, you can use any hex color you prefer */
 }
 .text-black{
+  font-weight: bold;
   color: black;
 }
 .desc-title {
