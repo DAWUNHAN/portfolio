@@ -20,6 +20,9 @@ body:before {
 
 .container {
     padding: 100px 10%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 .small-title{
   font-size: 1.7rem;
@@ -49,4 +52,9 @@ body:before {
   width: 70%; /* 너비 설정 */
   margin: 0 auto; /* 가운데 정렬 */
   text-align: left; /* 텍스트 왼쪽 정렬 */
+}
+@media screen and (max-width: 768px) {
+  .centered-list {
+      width: 100%; /* 모바일 화면에서의 너비 */
+  }
 }
