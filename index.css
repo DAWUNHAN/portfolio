@@ -49,7 +49,7 @@ body:before {
   color: rgba(0, 0, 0, 0);
 }
 .centered-list {
-  width: 70%; /* 너비 설정 */
+  width: 60%; /* 너비 설정 */
   margin: 0 auto; /* 가운데 정렬 */
   text-align: left; /* 텍스트 왼쪽 정렬 */
 }
