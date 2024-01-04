@@ -143,14 +143,13 @@
             <p class="text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
               의료진의 요구사항을 기반으로, 임계값 및 색상 스킴 조정 실험을 수행하였습니다. 실험 결과를 바탕으로 GradCAM heatmap 표현범위를 조정하여 <span class="text-strong-gray">질환 의심 부위를 보다 명확하게 시각화</span>했습니다. 또한, 그 결과 의료진의 사용성평가에서 ‘만족’ 결과를 받았습니다.
             </p>
-            <img src="img/xai.png" alt="xai 이미지" class="mb-4 desc-img">
+
             <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
               ○ 진단모델이 안구이미지의 망막 부위를 보지 않고 판단하는 문제 해결
             </p>
             <p class="text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
               이미지에서 망막 외 부분에 <span class="text-strong-gray">가우시안 분포를 이루는 Random Noise를 추가</span>하였습니다. 배경 정보를 무시하고 망막의 정보만 학습하여 질환의 특징을 학습하도록 유도하였습니다. 이 방식을 통해 모델이 망막부위를 보는 경우가 <span class="text-strong-gray">기존 대비 약 27% 증가</span>하였습니다.
             </p>
-            <img src="img/RandomNoise.png" alt="xai 이미지" class="mb-4 desc-img">
 
             <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
               ○ Multi GPU (A100 또는 RTX4090 4대) 사용을 위한 DP/DDP 기술 적용
@@ -170,6 +169,7 @@
             <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
               ○ <span class="text-black">[성과] 4대 안질환 판독모델 개발</span> (각 질환별 정확도 93.2%, 98.4%, 96%, 93.45%)
             </p>
+            <img src="img/xai.png" alt="xai 이미지" class="mb-4 desc-img">
         </li>
         <li class="mb-10 ms-6">
             <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
