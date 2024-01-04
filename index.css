@@ -35,6 +35,10 @@ body:before {
   font-weight: bold;
   color: #5433FF; /* This is Tailwind's red-500 color, you can use any hex color you prefer */
 }
+.text-strong-gray {
+  font-weight: bold;
+  color: #555555;
+}
 .text-black{
   font-weight: bold;
   color: black;
@@ -46,8 +50,12 @@ body:before {
   margin-bottom: 20px; /* 여기서는 8px로 설정했으나, 원하는 간격에 따라 조정 가능 */
 }
 .indent-text {
-  color: rgba(0, 0, 0, 0);
+  padding-left: 2rem;
 }
+.desc-img {
+  padding-left: 2rem;
+}
+
 .centered-list {
   width: 60%; /* 너비 설정 */
   margin: 0 auto; /* 가운데 정렬 */
