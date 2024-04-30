@@ -4,51 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centered Header Example</title>
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
     <link rel="stylesheet" href="index.css">
-		<title>Portfolio</title>
+		<title>Dawun Han's Portfolio</title>
 </head>
 <body>
   <div class="container">
-    <header class="text-center py-4">
+    <header class="text-center">
       <p class="title small-title text-lg">Deeplearning Engineer</p>
-      <h2 class="title main-title text-4xl font-bold sm:text-6xl">타 이 틀</h2>
-      <p class="title desc-title text-gray-300 pt-4">컴퓨터비전 분야에서 딥러닝을 연구하고 있습니다. </br> 데이터 전처리, 모델개발 및 학습, 결과 도출을 수행하였으며,
-이를 적용한 안질환 진단보조 프로그램을 개발하였습니다.  </br> 또한, 최신 딥러닝모델 경향파악을 위해 Diffusion, GAN,
-Deformable Convolution 등과 관련된 사내 세미나 발표를 하였습니다.  </br> 능동적인 태도로 새로운 기술을 배우고
-적용하는 것에 적극적인 엔지니어입니다.</p>
+      <h2 class="title main-title text-6xl font-bold sm:text-6xl">한 다 운</h2>
+      <div class="title desc-title text-gray-300 my-16">
+        <p class="mb-3"><span class="text-black">컴퓨터비전 분야</span>에서 딥러닝을 연구하고 있습니다.</p>
+        <p class="mb-3">데이터를 통해 세상을 바라보고, 비지니스 가치로 잇는 것에 관심있습니다.</p>
+        <p class="mb-3"><span class="text-black">능동적인 태도</span>로 새로운 기술을 배우고 적용하는 것에 <span class="text-black">적극적인 엔지니어</span>입니다.</p>
+      </div>
+
     </header>
 
     <div class="part-techstacks ">
       <div class="flex justify-center overflow-x-auto">
-          <table class="text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+          <table class="text-left rtl:text-right text-gray-500 dark:text-gray-400">
               <tbody>
                   <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                       <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                          <strong>Data science</strong>
+                          <strong>AI(ML/DL)</strong>
                       </th>
                       <td class="px-6 py-4">
-                          <span class="text-strong">파이토치</span>, <span class="text-strong">OpenCV</span>, 텐서플로우
+                          <span class="text-strong">PyTorch</span>, <span class="text-strong">OpenCV</span>, TensorFlow, LangChain, Numpy, Pandas
                       </td>
                   </tr>
                   <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
                       <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                          <strong>Programming skills</strong>
+                          <strong>Programming & Tools</strong>
                       </th>
                       <td class="px-6 py-4">
-                          <span class="text-strong">파이썬</span>, 쿠버네티스, 도커, 리눅스, C
+                          <span class="text-strong">Python</span>, Linux, Kubernetes, Docker, Google Cloud Platform, PyQT, Git
                       </td>
                   </tr>
+                  <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+                    <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                        <strong>Web Programming</strong>
+                    </th>
+                    <td class="px-6 py-4">
+                        <span class="text-strong">FastAPI</span>, Flask, Streamlit, Django
+                    </td>
+                </tr>
                   <tr class="bg-white dark:bg-gray-800">
                       <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
                           <strong>Database skills</strong>
                       </th>
                       <td class="px-6 py-4">
-                          SQL(MysSQL, SQLite), NoSQL
+                          SQL(MysSQL, SQLite, PostgresSQL), NoSQL
                       </td>
                   </tr>
               </tbody>
@@ -57,7 +66,8 @@ Deformable Convolution 등과 관련된 사내 세미나 발표를 하였습니�
     </div>
 
     <div class="part-contacts">
-      <dl class="grid max-w-screen-xl grid-cols-2 gap-8 p-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-white sm:p-8">
+      <dl class="flex flex-col gap-5 py-16 px-4 mx-auto text-gray-900 dark:text-white sm:grid sm:max-w-screen-xl sm:grid-cols-2 sm:gap-5 sm:pt-8 sm:pb-16 xl:grid-cols-6">
+      <!-- <dl class="grid max-w-screen-xl grid-cols-2 gap-5 py-16 px-4 mx-auto text-gray-900 sm:grid-cols-3 xl:grid-cols-6 dark:text-white sm:pt-8 sm:pb-16"> -->
         <div class="flex flex-col items-center justify-center"></div>
         <a href="mailto: dawun.han@gmail.com">
           <div class="flex flex-col items-center justify-center">
@@ -100,92 +110,242 @@ Deformable Convolution 등과 관련된 사내 세미나 발표를 하였습니�
 
     <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
     <div class="part-projects">
-      <h2 class="text-center title main-title text-4xl font-bold">Projects</h2>
-      <ol class="relative border-s border-gray-200 dark:border-gray-700">
-          <li class="mb-10 ms-6">
-              <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                  <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                  </svg>
-              </span>
-              <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-white">Deformable convolution 라이브러리 구현</h3>
-              <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023.11 - Present</time>
-              <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Pytorch</span>
+      <h2 class="text-center title main-title text-4xl font-bold py-16">Projects</h2>
+      <ol class="relative border-s border-gray-200 dark:border-gray-700 centered-list">
+        <li class="ms-6">
+          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+              </svg>
+          </span>
+
+          <div class="flex items-baseline justify-between">
+              <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">다파장 카메라용 소프트웨어 개발</h3>
+              <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2024.01 - 2024.04 @Meraker</time>
+          </div>
+          <p class="text-base font-normal text-gray-900 dark:text-gray-400">다파장 카메라 실험 성능 확인을 위한 Window 및 Mac 버전용 소프트웨어 개발</p>
+
+          <div class="mb-4">
+            <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Pytorch</span>
+            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-yellow-300 border border-yellow-300">Python</span>
+            <span class="bg-orange-100 text-orange-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-orange-400 border border-orange-400">PyQT</span>
+            <span class="bg-cyan-100 text-cyan-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-cyan-400 border border-cyan-400">OpenCV</span>
+            <span class="bg-teal-100 text-teal-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-teal-400 border border-teal-400">Multithreading</span>
+          </div>
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
+            ○ PyQT를 활용하여 영상데이터의 픽셀별 RGB 추출 소프트웨어 개발
+          </p>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
+            데스크탑 애플리케이션 개발에 필요한 PyQT를 사용할 수 있습니다.
+          </p>
+
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
+            ○ 영상 데이터를 학습 데이터로 만드는 유틸리티 구현 (Multithreading을 통한 시간 83% 단축)
+          </p>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
+            시간 리소스 절약을 위해 Multithreading 기술을 사용하였습니다.
+          </p>
+
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            ○ <span class="text-black">[성과] </span>광학 엔지니어 요구사항 기반의 실험용 소프트웨어 개발 완료</span>
+          </p>
+        </li>
+
+        <li class="ms-6">
+          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+              </svg>
+          </span>
+
+          <div class="flex items-baseline justify-between">
+              <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Deformable convolution 라이브러리 구현</h3>
+              <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023.11 - 2023.12 @Meraker</time>
+          </div>
+          <p class="text-base font-normal text-gray-900 dark:text-gray-400">입력 데이터의 특징 추출 시, 변형가능한 컨볼루션을 적용하기 위한 라이브러리 개발 프로젝트</p>
+
+          <div class="mb-4">
+            <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Pytorch</span>
+            <span class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-pink-400 border border-pink-400">DCN(Deformable Conv Net)</span>
+            <span class="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 border border-purple-400">CNN</span>
+          </div>
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
+            ○ 마이크로소프트 社의 DCNv2 모델 코드구현
+          </p>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
+            논문 내용을 기반으로 코드구현이 가능합니다.
+          </p>
+
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
+            ○ CNN 모델의 Convolution layer를 Deformable convolution layer로 변경
+          </p>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
+            기존 모델을 커스터마이징하여 적용하였습니다.
+          </p>
+
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            ○ <span class="text-black">[성과] </span>Deformable convolution 적용한 뒤, <span class="text-black">백내장 진단정확도</span> 91.45%에서 <span class="text-black">93.2%으로 상승</span>
+          </p>
+        </li>
+
+        <li class="mb-10 ms-6">
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+            </span>
+            <div class="flex items-baseline justify-between">
+                <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">구글 클라우드 기반 SaaS 시스템 구축</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023.01 - 2023.07 @Meraker</time>
+            </div>
+            <p class="text-base font-normal text-gray-900 dark:text-gray-400">안질환 진단보조 웹앱 서비스 배포 프로젝트</p>
+            <div class="mb-4">
+              <span class="bg-blue-200 text-blue-900 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-500 border border-blue-500">Google Cloud</span>
               <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-500">Docker</span>
               <span class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400">Linux</span>
-              <span class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400">OpenCV</span>
+              <span class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400">Kubernetes</span>
+              <span class="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 border border-purple-400">Django</span>
+            </div>
+
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
+              ○ 도커를 활용한 APP 컨테이너화 및 쿠버네티스 기반 딥러닝 모델 배포
+            </p>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
+              진단보조 웹APP과 모델은 각각 컨테이너로 배포되어 모듈화 되어있습니다. 사용자 요청에 따라 모델컨테이너 팟이 증가되어 수요증가에 대응할 수 있습니다.<span class="text-strong-gray"></span>
+            </p>
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
+              ○ SaaS 시스템 아키텍쳐 구축 경험 (MySQL DB, Django 웹앱, 딥러닝 모델 컨테이너)
+            </p>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
+              Django 프레임워크로 개발한 웹사이트에 안질환 판독모델과 Restful API 통신으로 연결하였습니다.
+            </p>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              ○ <span class="text-black">[성과] </span>구글 클라우드 플랫폼 기반의 안질환 진단보조 <span class="text-black">웹앱 서비스 구축 및 배포</span>
+            </p>
+            <img src="img/webapp.png" alt="webapp 이미지" class="mb-4 desc-img">
+        </li>
+        
+          <li class="mb-10 ms-6">
+            <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+                </svg>
+            </span>
+            <div class="flex items-baseline justify-between">
+                <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">4대 안질환 진단모델 개발</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022.04 - 2023.12 @Meraker</time>
+            </div>
+            <p class="text-base font-normal text-gray-900 dark:text-gray-400">안과이미지를 통해 선별진단하는 AI 개발 프로젝트</p>
+            <div class="mb-4">
               <span class="bg-yellow-100 text-yellow-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-yellow-300 border border-yellow-300">Python</span>
-              <span class="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-indigo-400 border border-indigo-400">MySQL</span>
-              <span class="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 border border-purple-400">Cloud</span>
-              <span class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-pink-400 border border-pink-400">Pink</span>
-              <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"></br>
-                [목적] 입력 데이터의 특징 추출 시, 변형가능한 컨볼루션을 적용하기 위한 라이브러리 구현</br>
-                [내용] ○ 마이크로소프트 社의 DCNv2 모델 코드구현</br>
-                <span class="indent-text">[내용]</span> ○ CNN 모델의 Convolution layer를 Deformable convolution layer로 변경</br>
-                [성과] Deformable convolution 적용한 뒤, 백내장 진단정확도 91.45%에서 93.2%으로 상승
-              </p>
-          </li>
-          <li class="mb-10 ms-6">
-              <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                  <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                  </svg>
-              </span>
-              <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">비디오 고해상도화 딥러닝모델 논문분석</h3>
-              <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023.08 - 2023.10</time>
               <span class="bg-blue-100 text-blue-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-blue-400 border border-blue-400">Pytorch</span>
-              <span class="bg-gray-100 text-gray-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-gray-400 border border-gray-500">Docker</span>
-              <span class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400">Linux</span>
-              <span class="bg-green-100 text-green-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-400 border border-green-400">OpenCV</span>
-              <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"></br>
-                [목적] Video Super-resolution 프로그램용 베이스라인 모델 리서치</br>
-                [내용] ○ 파운데이션 모델 (GAN, Diffusion, Transformer 등) 논문 및 코드분석 </br>
-                <span class="indent-text">[내용]</span> ○ 2023년 CVPR 및 ICCV 탑재 논문 중 연관논문 리서치</br>
-                [성과] 논문리서치 결과 기반으로 비디오 고해상도화 파운데이션 모델 결정
-              </p>
-          </li>
-          <li class="ms-6">
-              <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                  <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                  </svg>
-              </span>
-              <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">구글 클라우드 기반 SaaS 시스템 구축</h3>
-              <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023.01 - 2023.07</time>
-              <span class="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-indigo-400 border border-indigo-400">MySQL</span>
-              <span class="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 border border-purple-400">Cloud</span>
-              <span class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-pink-400 border border-pink-400">Pink</span>
-              <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"></br>
-                [목적] 입력 데이터의 특징 추출 시, 변형가능한 컨볼루션을 적용하기 위한 라이브러리 구현</br>
-                [내용] ○ 도커를 활용한 APP 컨테이너화 및 쿠버네티스 기반 딥러닝 모델 배포</br>
-                <span class="indent-text">[내용]</span> ○ SaaS 시스템 아키텍쳐 구축 경험 (MySQL DB, Django 웹앱, 딥러닝 모델 컨테이너) </br>
-                [성과] 구글 클라우드 플랫폼 기반의 안질환 진단보조 웹앱 서비스 구축 및 배포
-              </p>
-          </li>
-          <li class="ms-6">
-              <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                  <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                      <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
-                  </svg>
-              </span>
-              <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">4대 안질환 진단모델 개발</h3>
-              <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2022.04 - 2022.12</time>
-              <span class="bg-indigo-100 text-indigo-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-indigo-400 border border-indigo-400">MySQL</span>
-              <span class="bg-purple-100 text-purple-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-purple-400 border border-purple-400">Cloud</span>
-              <span class="bg-pink-100 text-pink-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-pink-400 border border-pink-400">Pink</span>
-              <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"></br>
-                [목적] 4대 안질환(백내장, 당뇨망막, 녹내장, 황반변성) 판독 모델 개발 및 질환의심부위 출력</br>
-                [내용] ○ Multi GPU (A100 또는 RTX4090 4대) 사용을 위한 DP/DDP 기술 적용</br>
-                <span class="indent-text">[내용]</span> ○ 모델 개발 파이프라인(데이터 전처리, 모델 학습, 테스트 결과 그래프 출력) 구축</br>
-                <span class="indent-text">[내용]</span> ○ 텐서보드의 모델 학습 모니터링 시스템 도입</br>
-                <span class="indent-text">[내용]</span> ○ GradCAM을 활용한 질환의심부위 표기 </br>
-                [성과] ○ 안질환(백내장, 당뇨망막, 녹내장, 황반변성) 판독모델개발 (정확도 91.4%, 98.4%, 96%, 93.45%)</br>
-                <span class="indent-text">[내용]</span> ○ 보건복지부 정부지원사업 1단계 통과 및 사업비 증액
-              </p>
-          </li>
+              <span class="bg-green-200 text-green-900 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-green-500 border border-green-500">GradCAM</span>
+              <span class="bg-red-100 text-red-800 text-xs font-medium me-2 px-2.5 py-0.5 rounded dark:bg-gray-700 dark:text-red-400 border border-red-400">ResNet</span>
+            </div>
+
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
+              ○ 데이터 전처리 및 모델개발 파이프라인 구축
+            </p>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
+              안질환 진단모델 개발에 필요한 데이터 프로세싱, 모델 선택, 학습 및 질환의심부위 표시결과 출력과정을 한번에 진행할 수 있는 프레임워크를 구축하였습니다.
+            </p>
+
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
+              ○ GradCAM을 활용한 질환의심부위 표기
+            </p>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
+              의료진의 요구사항을 바탕으로 GradCAM heatmap 표현범위를 조정하여 <span class="text-strong-gray">질환 의심 부위를 보다 명확하게 시각화</span>했습니다.
+            </p>
+
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
+              ○ 진단모델이 안구이미지의 망막 부위를 보지 않고 판단하는 문제 해결
+            </p>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
+              이미지에서 망막 외 부분에 <span class="text-strong-gray">가우시안 분포를 이루는 Random Noise를 추가</span>하여 망막정보만 학습하도록 유도하였습니다.
+            </p>
+
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
+              ○ Multi GPU (A100 또는 RTX4090 4대) 사용을 위한 DP/DDP 기술 적용
+            </p>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
+              Multi GPU 환경을 구축하여 Distributed Data Parallelism(DDP) 기술을 통해 모델학습 시간이 <span class="text-strong-gray
+              ">DP기술 대비 70% 감소</span>하였습니다.
+            </p>
+
+            <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
+              ○ 텐서보드의 모델 학습 모니터링 시스템 도입
+            </p>
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
+              텐서보드를 통해 실험 도중 모니터링을 할 수 있기 때문에 <span class="text-strong-gray">시간 및 GPU 리소스 비용 절감</span>을 하였습니다.
+            </p>
+
+            <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+              ○ <span class="text-black">[성과] 4대 안질환 판독모델 개발</span> (각 질환별 정확도 91.45%, 98.4%, 96%, 93.45%)
+            </p>
+            <img src="img/xai.png" alt="xai 이미지" class="mb-4 desc-img">
+        </li>
       </ol>
     </div>
     <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+    <div class="part-projects">
+      <h2 class="text-center title main-title text-4xl font-bold py-16">Personal Projects</h2>
+      <ol class="relative border-s border-gray-200 dark:border-gray-700 centered-list">
+        <li class="ms-6">
+          <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+              <svg class="w-2.5 h-2.5 text-blue-800 dark:text-blue-300" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M20 4a2 2 0 0 0-2-2h-2V1a1 1 0 0 0-2 0v1h-3V1a1 1 0 0 0-2 0v1H6V1a1 1 0 0 0-2 0v1H2a2 2 0 0 0-2 2v2h20V4ZM0 18a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V8H0v10Zm5-8h10a1 1 0 0 1 0 2H5a1 1 0 0 1 0-2Z"/>
+              </svg>
+          </span>
+
+          <div class="flex items-baseline justify-between">
+              <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">LangChain 활용한 GPT 웹 서비스 구축</h3>
+              <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2024.02 - 2024.04</time>
+          </div>
+          <p class="text-base font-normal text-gray-900 dark:text-gray-400">LangChain과 OpenAI 모델을 활용한 AI챗봇 개발 프로젝트</p>
+
+          <div class="mb-4">
+            <span class="text-xs font-medium me-2 px-2.5 py-0.5 rounded border" style="background-color: #C7EA46; color: #607D3B; border-color: #9DC209;">LangChain</span>
+            <span class="text-xs font-medium me-2 px-2.5 py-0.5 rounded border" style="background-color: #FFE0B2; color: #CA8A04; border-color: #FFB300;">Langsmith</span>
+            <span class="text-xs font-medium me-2 px-2.5 py-0.5 rounded border" style="background-color: #D1C4E9; color: #3F51B5; border-color: #303F9F;">Streamlit</span>
+            <span class="text-xs font-medium me-2 px-2.5 py-0.5 rounded border" style="background-color: #F3E5F5; color: #C2185B; border-color: #AD1457;">ChatGPT Plugin</span>
+            <span class="text-xs font-medium me-2 px-2.5 py-0.5 rounded border" style="background-color: #FFCDD2; color: #D32F2F; border-color: #C62828;">Hugging Face</span>
+            <span class="text-xs font-medium me-2 px-2.5 py-0.5 rounded border" style="background-color: #DCEDC8; color: #388E3C; border-color: #2E7D32;">Whisper</span>
+          </div>
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
+            ○ 문서 파일(.PDF, .docx 등) 기반 사용자 질문에 답변하는 Document GPT 구현
+          </p>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
+            유저가 입력한 문서파일을 기반으로 질문에 적합한 답변을 생성하는 챗봇 기능입니다.
+          </p>
+
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
+            ○ 대화 내용을 캐시에 저장하여 GPT모델의 문서로드 시간단축 및 API 호출비용 절감
+          </p>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
+            API 호출 시 부과되는 모델 사용료를 줄이고자, 기존 대화내용을 캐시화하였습니다. 따라서, 기존에 같은 질문을 한 경우, 저장된 캐시에서 답변을 찾아 API 중복호출을 방지하였습니다.
+          </p>
+
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
+            ○ Streamlit로 구현된 사용자 인터페이스를 갖춘 대화형 AI챗봇 개발
+          </p>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
+            Chatbot 유저 인터페이스를 효율적으로 구현하기 위해 라이브러리 Streamlit을 활용하였습니다.
+          </p>
+
+          <p class="text-base font-normal text-gray-500 dark:text-gray-400 text-black">
+            ○ Whisper를 활용하여 회의 오디오 내용을 기반으로 회의록 작성 및 요약 기능 구현
+          </p>
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 indent-text">
+            OpenAI의 음성인식모델 Whisper를 활용하였습니다. 사용자가 회의영상 데이터를 업로드하면 오디오를 추출한 뒤, 회의록을 작성한 뒤 주요내용을 요약하는 기능을 개발하였습니다.
+          </p>
+          
+          <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+            ○ <span class="text-black">[성과] </span>LLM 모델들을 활용한 사용자와 상호작용하는 대화형 챗봇 개발</span>
+          </p>
+        </li>
+
+      </ol>
+    </div>
   </div>
 </body>
 </html>
