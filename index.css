@@ -24,6 +24,10 @@ body:before {
     margin-right: auto;
     display: block;
 }
+.main-title{
+  font-size: 5rem;
+  line-height: 1;
+}
 .small-title{
   font-size: 1.7rem;
   margin-bottom: 10px;
@@ -57,7 +61,7 @@ body:before {
 }
 
 .centered-list {
-  width: 60%; /* 너비 설정 */
+  width: 80%; /* 너비 설정 */
   margin: 0 auto; /* 가운데 정렬 */
   text-align: left; /* 텍스트 왼쪽 정렬 */
 }
